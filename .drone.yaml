@@ -1,0 +1,41 @@
+---
+kind: pipeline
+type: docker
+name: deploy data
+
+steps:
+- name: move files to production
+  image: appleboy/drone-scp
+  settings:
+    host:
+      from_secret: host_prod
+    username:
+      ci_user
+    key:
+      from_secret: ssh_key_prod
+    port: 22
+    rm: false
+    source: 
+      - "/drone/src/*"
+    overwrite: true
+    target: /home/ci_user/deploy_kk_front/
+    strip_components: 2
+  when:
+    branch:
+      - main
+
+- name: deploy to production
+  image: appleboy/drone-ssh
+  settings:
+    script:
+      - rm -rf /home/ci_user/deploy_kk_front/.git
+      - /bin/cp -rf /home/ci_user/deploy_kk_front/* /var/www/html/kissakalenteri/
+    host:
+      from_secret: host_prod
+    username:
+      ci_user
+    key:
+      from_secret: ssh_key_prod
+  when:
+    branch:
+      - main
