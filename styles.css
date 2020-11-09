@@ -1,0 +1,68 @@
+
+#loading-indicator {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url("images/bg.png");
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+}
+
+#main-content {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: url("images/bg_anim.gif");
+}
+
+#calendar-image {
+    background: url('images/calendar.png') no-repeat;
+    background-size: 100%;
+    position: relative;
+    width: 1050px;
+    height: 597px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#loading-indicator {
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+    text-align: center;
+    background: url('images/loading.gif');
+    position: fixed;
+    z-index: 100;
+}
+
+.calendar-window {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    border: 2px dotted black;
+    color: black;
+    font-size: 2em;
+}
+.calendar-window:hover {
+    border: 2px solid red;
+    color: red;
+}
+.calendar-number {
+    margin: 5px;
+}
