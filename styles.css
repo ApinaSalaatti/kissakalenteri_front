@@ -1,8 +1,14 @@
+#logo-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
 #loading-indicator {
     position: fixed;
     top: 0px;
     left: 0px;
+    color: red;
 }
 
 html {
@@ -13,12 +19,20 @@ html {
 }
 
 body {
-    background: url("images/bg.png");
+    background: url("images/bg_of_bg.gif");
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     position: absolute;
+}
+
+#behind-content {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #9e1818d7;
 }
 
 #main-content {
@@ -32,11 +46,12 @@ body {
 #calendar-image {
     background: url('images/calendar.png') no-repeat;
     background-size: 100%;
-    position: relative;
-    width: 1050px;
-    height: 597px;
+    position: fixed;
+    width: 1200px;
+    height: 682px;
     padding: 0px;
     margin: 0px;
+    z-index: 10;
 }
 
 #loading-indicator {
@@ -52,12 +67,16 @@ body {
 .calendar-window {
     width: 100px;
     height: 100px;
-    position: relative;
+    position: absolute;
     left: 0px;
     top: 0px;
     border: 2px dotted black;
     color: black;
-    font-size: 2em;
+    font-size: 3em;
+    background-image: none;
+    cursor: pointer;
+    background-size: contain;
+    background: rgba(255,255,255,0.12);
 }
 .calendar-window:hover {
     border: 2px solid red;
@@ -65,4 +84,111 @@ body {
 }
 .calendar-number {
     margin: 5px;
+}
+
+#background-blurrer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 15;
+    background: #00000055;
+    display: none;
+}
+
+#image-display {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 50;
+}
+
+#image-closer {
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+#cat-music {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 6;
+}
+
+#info-display {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    padding: 10px;
+    z-index: 6;
+}
+
+#info-display a {
+    text-decoration: none;
+    color: #cc2222;
+}
+
+#bottom {
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 200px;
+    background-image: url("images/bottom.png");
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#skicat {
+    position: fixed;
+    bottom: 15px;
+    left: -120px;
+    z-index: 2;
+}
+
+#skicat-bubble {
+    position: fixed;
+    z-index: 110;
+    display: none;
+}
+
+#bottom-tree {
+    position: fixed;
+    bottom: -5px;
+    left: 60%;
+    z-index: 3;
+}
+
+#bottom-cat {
+    display: block;
+    position: fixed;
+    left: 70px;
+    bottom: 70px;
+    z-index: 0;
+}
+
+#cornercat {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 4;
+}
+
+#info-bubble {
+    position: fixed;
+    top: 0px;
+    right: 150px;
+    display: none;
+    z-index: 100;
 }
