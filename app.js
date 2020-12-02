@@ -226,8 +226,6 @@ function positionAndResizeCalendar() {
 
     positionWindows(sizePercent);
 
-    console.log(i.offsetWidth);
-
     var elems = document.getElementsByClassName("calendar-window");
     for(var i = 0; i < elems.length; i++) {
         var nw = w < 700 ? "2em" : "3em";
