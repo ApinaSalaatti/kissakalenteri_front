@@ -191,15 +191,26 @@ function positionAndResizeCalendar() {
     var i = document.getElementById("calendar-image");
 
     var maxWidth = WIDTH;
+    var maxHeight = HEIGHT - 150; // take into account the logo and the bottom area with music controls etc
+
+    // Reset width and height
+    i.style.removeProperty("width");
+    i.style.removeProperty("height");
     
     if(i.offsetWidth > maxWidth || maxWidth <= CALENDAR_ORIGINAL_WIDTH) {
         // Need to resize the calendar
         i.style.width = maxWidth + "px";
     }
-
+    
     var sizePercent = i.offsetWidth / CALENDAR_ORIGINAL_WIDTH;
-
     i.style.height = (CALENDAR_ORIGINAL_HEIGHT * sizePercent) + "px";
+
+    // Now that width is good, we check if the height needs to be adjusted also
+    if(i.offsetHeight > maxHeight) {
+        i.style.height = maxHeight + "px";
+        sizePercent = i.offsetHeight / CALENDAR_ORIGINAL_HEIGHT;
+        i.style.width = (CALENDAR_ORIGINAL_WIDTH * sizePercent) + "px";
+    }
 
     var w = i.offsetWidth;
     var h = i.offsetHeight;
@@ -217,7 +228,7 @@ function positionAndResizeCalendar() {
 
     var elems = document.getElementsByClassName("calendar-window");
     for(var i = 0; i < elems.length; i++) {
-        var nw = WIDTH < 700 ? "2em" : "3em";
+        var nw = i.offsetWidth < 700 ? "2em" : "3em";
         elems[i].style.fontSize = nw;
     }
 }
