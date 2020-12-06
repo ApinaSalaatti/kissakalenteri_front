@@ -61,7 +61,7 @@ function onResize() {
 	var i = document.getElementById("independence-cat");
 
 	var maxWidth = WIDTH;
-    var maxHeight = HEIGHT - 150; // take into account the logo and the bottom area with music controls etc
+    var maxHeight = HEIGHT - 200; // take into account the logo and the bottom area with music controls etc
 
 	// Reset width and height
     i.style.removeProperty("width");
