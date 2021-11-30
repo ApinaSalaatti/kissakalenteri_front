@@ -52,22 +52,24 @@ if(validDate(2021, 6)) {
     </head>
     <body>
 		<div id="behind-content">
-			<div id="main-content">
-				<img src="images/independence_logo.png" id="logo-image" />
+			<div id="second-bg">
+				<div id="main-content">
+					<img src="images/independence_logo.png" id="logo-image" />
 
-                <img src="https://www.kissakalenteri.fi/api/2021/6" id="independence-cat" />
+					<img src="https://www.kissakalenteri.fi/api/2021/6" id="independence-cat" />
 
-				<div id="cat-music">
-					<audio autoplay controls>
-						<source src="audio/isammauku.mp3" type="audio/mpeg">
-						Selaimesi ei tue musiikkia. Et kuule kissamusiikkia. :(
-					</audio>
+					<div id="cat-music">
+						<audio autoplay controls>
+							<source src="audio/isammauku.mp3" type="audio/mpeg">
+							Selaimesi ei tue musiikkia. Et kuule kissamusiikkia. :(
+						</audio>
+					</div>
+
+					<div id="bottom"></div>
+					
+					<div id="fireworks"></div>
+					
 				</div>
-
-                <div id="bottom"></div>
-                
-                <div id="fireworks"></div>
-				
 			</div>
 		</div>
 		
