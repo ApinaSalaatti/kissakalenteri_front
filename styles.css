@@ -32,7 +32,15 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: #9e1818d7;
+    background: url("images/bg_anim.gif");
+}
+
+#second-bg {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #189e45d7;
 }
 
 #main-content {
@@ -40,15 +48,15 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background: url("images/bg_anim.gif");
+    background: url("images/second_bg_anim.gif");
 }
 
 #calendar-image {
     background: url('images/calendar.png') no-repeat;
     background-size: 100%;
     position: fixed;
-    width: 1200px;
-    height: 682px;
+    width: 1050px;
+    height: 597px;
     padding: 0px;
     margin: 0px;
     z-index: 10;

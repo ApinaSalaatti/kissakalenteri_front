@@ -5,7 +5,7 @@ var HEIGHT = 0;
 var CALENDAR_ORIGINAL_WIDTH = 0;
 var CALENDAR_ORIGINAL_HEIGHT = 0;
 var LOGO_ORIGINAL_WIDTH = 0;
-var WINDOW_DEFAULT_SIZE = 100;
+var WINDOW_DEFAULT_SIZE = 90;
 
 var RESOURCES_LOADED = false;
 var DATA_LOADED = false;
@@ -15,7 +15,7 @@ var WINDOWS = [
 	{ x: 0.81, y: 0.45, size: 1 },
 	{ x: 0.41, y: 0.53, size: 1 },
 	{ x: 0.69, y: 0.14, size: 1 },
-	{ x: 0.69, y: 0.31, size: 1 },
+	{ x: 0.68, y: 0.32, size: 1 },
 	{ x: 0.45, y: 0.15, size: 1, target: "itsenaisyys.php" },
 	{ x: 0.10, y: 0.16, size: 1 },
 	{ x: 0.59, y: 0.67, size: 1 },
@@ -25,11 +25,11 @@ var WINDOWS = [
 	{ x: 0.82, y: 0.68, size: 1 },
 	{ x: 0.08, y: 0.33, size: 1 },
 	{ x: 0.09, y: 0.68, size: 1 },
-	{ x: 0.30, y: 0.69, size: 1 },
+	{ x: 0.31, y: 0.695, size: 1 },
 	{ x: 0.21, y: 0.33, size: 1 },
 	{ x: 0.57, y: 0.25, size: 1 },
 	{ x: 0.81, y: 0.26, size: 1 },
-	{ x: 0.21, y: 0.14, size: 1 },
+	{ x: 0.22, y: 0.14, size: 1 },
 	{ x: 0.14, y: 0.51, size: 1 },
 	{ x: 0.25, y: 0.53, size: 1 },
 	{ x: 0.71, y: 0.55, size: 1 },
