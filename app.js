@@ -129,7 +129,7 @@ function createWindows() {
             var day = this.getAttribute("window-day");
             var t = this.getAttribute("target");
             if(canSeeWindow(day)) {
-                setData("day-opened-" + YEAR + "-" + d, "true");
+                setData("day-opened-" + YEAR + "-" + day, "true");
                 this.style.backgroundImage = "url('" + BACKEND + "" + YEAR + "/" + day + "/thumb')";
 
                 if(t) {
