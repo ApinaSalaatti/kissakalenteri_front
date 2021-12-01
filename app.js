@@ -116,7 +116,7 @@ function createWindows() {
 
         var specialTarget = WINDOWS[i].target ? 'target="' + WINDOWS[i].target + '"' : '';
 
-        var bg = getData("day-opened-" + d) == "true" ? "url('" + BACKEND + "" + YEAR + "/" + d + "/thumb')" : "";
+        var bg = getData("day-opened-" + YEAR + "-" + d) == "true" ? "url('" + BACKEND + "" + YEAR + "/" + d + "/thumb')" : "";
         var windowStr = '<div ' + specialTarget + ' class="calendar-window" window-day="' + d + '"><span class="calendar-number">' + d + '</span></div>';
         var elem = createElementFromHTML(windowStr);
 
@@ -129,7 +129,7 @@ function createWindows() {
             var day = this.getAttribute("window-day");
             var t = this.getAttribute("target");
             if(canSeeWindow(day)) {
-                setData("day-opened-" + day, "true");
+                setData("day-opened-" + YEAR + "-" + d, "true");
                 this.style.backgroundImage = "url('" + BACKEND + "" + YEAR + "/" + day + "/thumb')";
 
                 if(t) {
