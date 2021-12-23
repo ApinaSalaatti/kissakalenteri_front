@@ -51,8 +51,9 @@ if(validDate(2021, 24)) {
 		<link rel="shortcut icon" href="favicon.ico">
     </head>
     <body>
-		<div id="behind-content">
-			<div id="main-content">
+				<div id="behind-content">
+			<div id="second-bg">
+				<div id="main-content">
                 <img src="images/aattoLogo.png" id="logo-image" />
                 
                 <div id="background-blurrer"></div>
@@ -74,6 +75,7 @@ if(validDate(2021, 24)) {
 					</audio>
 				</div>
 			</div>
+		</div>
 		</div>
 		
 		<script src="aattoScript.js"></script>

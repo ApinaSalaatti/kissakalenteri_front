@@ -7,36 +7,101 @@ var IMAGE_DISPLAYED = false;
 var CURRENT_IMAGE = 0;
 
 var IMAGES = [
-	{ image: "ticru.jpg", thumb: "ticru_t.jpg", width: "450", height: "800" },
-	{ image: "terolta.jpg", thumb: "terolta_t.jpg", width: "1000", height: "750" },
-	{ image: "Friendly Neighbourhood Cat.jpg", thumb: "Friendly Neighbourhood Cat_t.jpg", width: "900", height: "1200" },
-	{ image: "Dr. Mimo.jpg", thumb: "Dr. Mimo_t.jpg", width: "480", height: "640" },
-	{ image: "Diablo.jpg", thumb: "Diablo_t.jpg", width: "744", height: "1000" },
-	{ image: "Camilla.jpg", thumb: "Camilla_t.jpg", width: "1100", height: "825" },
-	{ image: "Allu.jpeg", thumb: "Allu_t.jpeg", width: "1100", height: "618" },
-	{ image: "Aino.jpg", thumb: "Aino_t.jpg", width: "1100", height: "825" },
-	{ image: "Nicole.png", thumb: "Nicole_t.png", width: "750", height: "1000" },
-	{ image: "Nepa.jpg", thumb: "Nepa_t.jpg", width: "750", height: "1000" },
-	{ image: "Nelli.jpeg", thumb: "Nelli_t.jpeg", width: "737", height: "640" },
-	{ image: "Nappi.jpg", thumb: "Nappi_t.jpg", width: "1100", height: "825" },
-	{ image: "Nalle.jpeg", thumb: "Nalle_t.jpeg", width: "828", height: "1000" },
-	{ image: "Minni.jpg", thumb: "Minni_t.jpg", width: "750", height: "1000" },
-	{ image: "Lotja.jpg", thumb: "Lotja_t.jpg", width: "1100", height: "732" },
-	{ image: "Kissa.png", thumb: "Kissa_t.png", width: "709", height: "1000" },
-	{ image: "Kismet.jpg", thumb: "Kismet_t.jpg", width: "1080", height: "1080" },
-	{ image: "Vieno.jpeg", thumb: "Vieno_t.jpeg", width: "1100", height: "785" },
-	{ image: "tuuba.jpeg", thumb: "tuuba_t.jpeg", width: "750", height: "1000" },
-	{ image: "Sulo.jpeg", thumb: "Sulo_t.jpeg", width: "1100", height: "787" },
-	{ image: "Sarasvati.jpg", thumb: "Sarasvati_t.jpg", width: "1100", height: "825" },
-	{ image: "Pumpuli.jpg", thumb: "Pumpuli_t.jpg", width: "541", height: "960" },
-	{ image: "Piki.jpg", thumb: "Piki_t.jpg", width: "750", height: "1000" },
-	{ image: "Pete.jpg", thumb: "Pete_t.jpg", width: "480", height: "859" },
-	{ image: "Pablo ja Elmo.jpg", thumb: "Pablo ja Elmo_t.jpg", width: "744", height: "1000" },
-	{ image: "Tuusannuuska.jpeg", thumb: "Tuusannuuska_t.jpeg", width: "486", height: "1000" },
-	{ image: "Ryokale.jpeg", thumb: "Ryokale_t.jpeg", width: "562", height: "1000" },
-	{ image: "Pippuri ja Sheila.jpeg", thumb: "Pippuri ja Sheila_t.jpeg", width: "768", height: "1024" },
-	{ image: "Morokolli.jpeg", thumb: "Morokolli_t.jpeg", width: "486", height: "1000" },
-	{ image: "Morrimoykky.jpeg", thumb: "Morrimoykky_t.jpeg", width: "562", height: "1000" }
+	{ image: 'allu.jpeg', thumb: 'allu_t.jpeg', width: 1000, height: 750 } ,
+	{ image: 'armi.jpg', thumb: 'armi_t.jpg', width: 750, height: 1000 } ,
+	{
+	  image: 'atenkissa.jpg',
+	  thumb: 'atenkissa_t.jpg',
+	  width: 451,
+	  height: 1000
+	} ,
+	{
+	  image: 'dandidou.jpg',
+	  thumb: 'dandidou_t.jpg',
+	  width: 750,
+	  height: 1000
+	} ,
+	{ image: 'diablo.jpg', thumb: 'diablo_t.jpg', width: 563, height: 750 } ,
+	{ image: 'elmo.jpg', thumb: 'elmo_t.jpg', width: 563, height: 750 } ,
+	{
+	  image: 'kiskis.jpeg',
+	  thumb: 'kiskis_t.jpeg',
+	  width: 1000,
+	  height: 563
+	} ,
+	{
+	  image: 'kismet.jpg',
+	  thumb: 'kismet_t.jpg',
+	  width: 1000,
+	  height: 843
+	} ,
+	{
+	  image: 'kissanen.jpg',
+	  thumb: 'kissanen_t.jpg',
+	  width: 750,
+	  height: 1000
+	} ,
+	{
+	  image: 'kisuli.jpeg',
+	  thumb: 'kisuli_t.jpeg',
+	  width: 750,
+	  height: 1000
+	} ,
+	{ image: 'mau.jpeg', thumb: 'mau_t.jpeg', width: 1000, height: 750 } ,
+	{
+	  image: 'maumauu.jpeg',
+	  thumb: 'maumauu_t.jpeg',
+	  width: 1000,
+	  height: 750
+	} ,
+	{ image: 'miisu.jpg', thumb: 'miisu_t.jpg', width: 750, height: 1000 } ,
+	{ image: 'minni.jpg', thumb: 'minni_t.jpg', width: 1000, height: 750 } ,
+	{
+	  image: 'nalle.jpeg',
+	  thumb: 'nalle_t.jpeg',
+	  width: 780,
+	  height: 1000
+	} ,
+	{
+	  image: 'nelli.jpeg',
+	  thumb: 'nelli_t.jpeg',
+	  width: 563,
+	  height: 1000
+	} ,
+	{ image: 'niki.jpg', thumb: 'niki_t.jpg', width: 750, height: 1000 } ,
+	{ image: 'noomi.jpg', thumb: 'noomi_t.jpg', width: 960, height: 540 } ,
+	{ image: 'pablo.jpg', thumb: 'pablo_t.jpg', width: 600, height: 800 } ,
+	{
+	  image: 'piippojahelvi.jpeg',
+	  thumb: 'piippojahelvi_t.jpeg',
+	  width: 1000,
+	  height: 750
+	} ,
+	{
+	  image: 'saukkis.jpg',
+	  thumb: 'saukkis_t.jpg',
+	  width: 576,
+	  height: 768
+	} ,
+	{
+	  image: 'sorakissa.jpg',
+	  thumb: 'sorakissa_t.jpg',
+	  width: 1000,
+	  height: 750
+	} ,
+	{ image: 'sulo.jpeg', thumb: 'sulo_t.jpeg', width: 1000, height: 563 } ,
+	{
+	  image: 'teronkissa.jpg',
+	  thumb: 'teronkissa_t.jpg',
+	  width: 879,
+	  height: 879
+	} ,
+	{
+	  image: 'vieno.jpeg',
+	  thumb: 'vieno_t.jpeg',
+	  width: 563,
+	  height: 1000
+	} ,
 ];
 
 function blur() {
@@ -158,7 +223,7 @@ function showImage(index) {
 		h = percent * h;
 	}
 
-	document.getElementById("main-image").src = "images/aatto/" + fname;
+	document.getElementById("main-image").src = "images/aatto/images/" + fname;
 	document.getElementById("image-display").style.display = "block";
 	document.getElementById("main-image").width = w;
 	document.getElementById("main-image").height = h;
@@ -174,7 +239,7 @@ function createThumb(index) {
 	var img = IMAGES[index];
 
 	var parent = document.getElementById("image-listing");
-	var e = createElementFromHTML('<img class="list-item" src="images/aatto/' + img.thumb + '" />');
+	var e = createElementFromHTML('<img class="list-item" src="images/aatto/thumbs/' + img.thumb + '" />');
 
 	e.addEventListener("click", function() { showImage(index); });
 
