@@ -26,7 +26,7 @@ function validDate($year, $day) {
 	return false;
 }
 
-if(validDate(2021, 6)) {
+if(validDate(2022, 6)) {
 ?>
 <!DOCTYPE html>
 <html lang="fi">
