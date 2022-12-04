@@ -12,12 +12,20 @@ html {
 }
 
 body {
-    background: url("images/bg_of_bg.gif");
+    background: url("images/bg_of_bg_of_bg.gif");
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     position: absolute;
+}
+
+#most-behindest {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: url("images/bg_of_bg.gif");
 }
 
 #behind-content {
