@@ -31,19 +31,19 @@ if(validDate(2022, 6)) {
 <!DOCTYPE html>
 <html lang="fi">
 	<head>
-		<title>Hyvää itsenäisyyspäivää 2021!</title>
+		<title>Hyvää itsenäisyyspäivää 2022!</title>
 		<meta charset="UTF-8"/>
 		<meta property="fb:admins" content="576790613" />
 		<meta property="fb:admins" content="663968960" />
 		<meta property="og:image" content="http://www.kissakalenteri.fi/fb_share.jpg" />
-		<meta property="og:title" content="Kissakalenteri 2021!" />
+		<meta property="og:title" content="Kissakalenteri 2022!" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="http://kissakalenteri.fi/" />
 		<meta property="og:description" content="Joulukalenteri kissoille ja kissanmielisille!" />
 		<meta property="fb:app_id" content="555856014752587" />
 		
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Kissakalenteri 2021!" />
+		<meta name="twitter:title" content="Kissakalenteri 2022!" />
 		<meta name="twitter:description" content="Joulukalenteri kissoille ja kissanmielisille!" />
 		<meta name="twitter:image:src" content="http://www.kissakalenteri.fi/fb_share.jpg" />
 		
