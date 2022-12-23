@@ -7,101 +7,29 @@ var IMAGE_DISPLAYED = false;
 var CURRENT_IMAGE = 0;
 
 var IMAGES = [
-	{ image: 'allu.jpeg', thumb: 'allu_t.jpeg', width: 1000, height: 750 } ,
-	{ image: 'armi.jpg', thumb: 'armi_t.jpg', width: 750, height: 1000 } ,
-	{
-	  image: 'atenkissa.jpg',
-	  thumb: 'atenkissa_t.jpg',
-	  width: 451,
-	  height: 1000
-	} ,
-	{
-	  image: 'dandidou.jpg',
-	  thumb: 'dandidou_t.jpg',
-	  width: 750,
-	  height: 1000
-	} ,
-	{ image: 'diablo.jpg', thumb: 'diablo_t.jpg', width: 563, height: 750 } ,
-	{ image: 'elmo.jpg', thumb: 'elmo_t.jpg', width: 563, height: 750 } ,
-	{
-	  image: 'kiskis.jpeg',
-	  thumb: 'kiskis_t.jpeg',
-	  width: 1000,
-	  height: 563
-	} ,
-	{
-	  image: 'kismet.jpg',
-	  thumb: 'kismet_t.jpg',
-	  width: 1000,
-	  height: 843
-	} ,
-	{
-	  image: 'kissanen.jpg',
-	  thumb: 'kissanen_t.jpg',
-	  width: 750,
-	  height: 1000
-	} ,
-	{
-	  image: 'kisuli.jpeg',
-	  thumb: 'kisuli_t.jpeg',
-	  width: 750,
-	  height: 1000
-	} ,
-	{ image: 'mau.jpeg', thumb: 'mau_t.jpeg', width: 1000, height: 750 } ,
-	{
-	  image: 'maumauu.jpeg',
-	  thumb: 'maumauu_t.jpeg',
-	  width: 1000,
-	  height: 750
-	} ,
-	{ image: 'miisu.jpg', thumb: 'miisu_t.jpg', width: 750, height: 1000 } ,
-	{ image: 'minni.jpg', thumb: 'minni_t.jpg', width: 1000, height: 750 } ,
-	{
-	  image: 'nalle.jpeg',
-	  thumb: 'nalle_t.jpeg',
-	  width: 780,
-	  height: 1000
-	} ,
-	{
-	  image: 'nelli.jpeg',
-	  thumb: 'nelli_t.jpeg',
-	  width: 563,
-	  height: 1000
-	} ,
-	{ image: 'niki.jpg', thumb: 'niki_t.jpg', width: 750, height: 1000 } ,
-	{ image: 'noomi.jpg', thumb: 'noomi_t.jpg', width: 960, height: 540 } ,
-	{ image: 'pablo.jpg', thumb: 'pablo_t.jpg', width: 600, height: 800 } ,
-	{
-	  image: 'piippojahelvi.jpeg',
-	  thumb: 'piippojahelvi_t.jpeg',
-	  width: 1000,
-	  height: 750
-	} ,
-	{
-	  image: 'saukkis.jpg',
-	  thumb: 'saukkis_t.jpg',
-	  width: 576,
-	  height: 768
-	} ,
-	{
-	  image: 'sorakissa.jpg',
-	  thumb: 'sorakissa_t.jpg',
-	  width: 1000,
-	  height: 750
-	} ,
-	{ image: 'sulo.jpeg', thumb: 'sulo_t.jpeg', width: 1000, height: 563 } ,
-	{
-	  image: 'teronkissa.jpg',
-	  thumb: 'teronkissa_t.jpg',
-	  width: 879,
-	  height: 879
-	} ,
-	{
-	  image: 'vieno.jpeg',
-	  thumb: 'vieno_t.jpeg',
-	  width: 563,
-	  height: 1000
-	} ,
+	{ image: '1.jpg', thumb: '1_t.jpg', width: 1326, height: 2048 } ,
+	{ image: '10.jpg', thumb: '10_t.jpg', width: 1504, height: 1475 } ,
+	{ image: '11.jpg', thumb: '11_t.jpg', width: 2048, height: 1537 } ,
+	{ image: '12.jpg', thumb: '12_t.jpg', width: 1515, height: 2015 } ,
+	{ image: '13.png', thumb: '13_t.png', width: 2048, height: 1536 } ,
+	{ image: '14.jpg', thumb: '14_t.jpg', width: 280, height: 349 } ,
+	{ image: '15.jpg', thumb: '15_t.jpg', width: 960, height: 540 } ,
+	{ image: '16.jpg', thumb: '16_t.jpg', width: 1500, height: 2000 } ,
+	{ image: '17.jpg', thumb: '17_t.jpg', width: 1537, height: 2048 } ,
+	{ image: '18.jpg', thumb: '18_t.jpg', width: 1152, height: 2048 } ,
+	{ image: '19.jpg', thumb: '19_t.jpg', width: 1536, height: 2048 } ,
+	{ image: '2.jpg', thumb: '2_t.jpg', width: 576, height: 768 } ,
+	{ image: '20.jpg', thumb: '20_t.jpg', width: 2048, height: 1537 } ,
+	{ image: '21.jpg', thumb: '21_t.jpg', width: 1536, height: 2048 } ,
+	{ image: '22.jpg', thumb: '22_t.jpg', width: 1075, height: 1486 } ,
+	{ image: '23.jpg', thumb: '23_t.jpg', width: 1536, height: 2048 } ,
+	{ image: '3.jpg', thumb: '3_t.jpg', width: 1536, height: 2048 } ,
+	{ image: '4.jpg', thumb: '4_t.jpg', width: 1536, height: 2048 } ,
+	{ image: '5.jpg', thumb: '5_t.jpg', width: 1152, height: 2048 } ,
+	{ image: '6.jpg', thumb: '6_t.jpg', width: 1638, height: 2048 } ,
+	{ image: '7.jpg', thumb: '7_t.jpg', width: 1536, height: 2048 } ,
+	{ image: '8.jpg', thumb: '8_t.jpg', width: 1445, height: 1445 } ,
+	{ image: '9.jpg', thumb: '9_t.jpg', width: 1600, height: 1200 }
 ];
 
 function blur() {
