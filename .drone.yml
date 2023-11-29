@@ -29,7 +29,7 @@ steps:
   settings:
     script:
       - rm -rf /home/ci_user/deploy_kk_front/.git
-      - echo "var YEAR = 2022; var BACKEND='https://www.kissakalenteri.fi/api/';" > /home/ci_user/deploy_kk_front/env.js
+      - echo "var YEAR = 2023; var BACKEND='https://www.kissakalenteri.fi/api/';" > /home/ci_user/deploy_kk_front/env.js
       - /bin/cp -rf /home/ci_user/deploy_kk_front/* /var/www/html/kissakalenteri/
     host:
       from_secret: host_prod
