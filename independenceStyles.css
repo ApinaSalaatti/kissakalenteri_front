@@ -49,7 +49,7 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background: url("images/bg_anim_independence.gif");
+    background: url("images/second_bg_anim.gif");
 }
 
 #independence-cat {
@@ -57,7 +57,7 @@ body {
 	left: 0px;
 	top: 0px;
 	z-index: 5;
-	width: 675px;
+	width: 1285px;
 	height: 900px;
 }
 
