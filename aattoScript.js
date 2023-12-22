@@ -7,29 +7,93 @@ var IMAGE_DISPLAYED = false;
 var CURRENT_IMAGE = 0;
 
 var IMAGES = [
-	{ image: '1.jpg', thumb: '1_t.jpg', width: 1326, height: 2048 } ,
-	{ image: '10.jpg', thumb: '10_t.jpg', width: 1504, height: 1475 } ,
-	{ image: '11.jpg', thumb: '11_t.jpg', width: 2048, height: 1537 } ,
-	{ image: '12.jpg', thumb: '12_t.jpg', width: 1515, height: 2015 } ,
-	{ image: '13.png', thumb: '13_t.png', width: 2048, height: 1536 } ,
-	{ image: '14.jpg', thumb: '14_t.jpg', width: 280, height: 349 } ,
-	{ image: '15.jpg', thumb: '15_t.jpg', width: 960, height: 540 } ,
-	{ image: '16.jpg', thumb: '16_t.jpg', width: 1500, height: 2000 } ,
-	{ image: '17.jpg', thumb: '17_t.jpg', width: 1537, height: 2048 } ,
-	{ image: '18.jpg', thumb: '18_t.jpg', width: 1152, height: 2048 } ,
-	{ image: '19.jpg', thumb: '19_t.jpg', width: 1536, height: 2048 } ,
-	{ image: '2.jpg', thumb: '2_t.jpg', width: 576, height: 768 } ,
-	{ image: '20.jpg', thumb: '20_t.jpg', width: 2048, height: 1537 } ,
-	{ image: '21.jpg', thumb: '21_t.jpg', width: 1536, height: 2048 } ,
-	{ image: '22.jpg', thumb: '22_t.jpg', width: 1075, height: 1486 } ,
-	{ image: '23.jpg', thumb: '23_t.jpg', width: 1536, height: 2048 } ,
-	{ image: '3.jpg', thumb: '3_t.jpg', width: 1536, height: 2048 } ,
-	{ image: '4.jpg', thumb: '4_t.jpg', width: 1536, height: 2048 } ,
-	{ image: '5.jpg', thumb: '5_t.jpg', width: 1152, height: 2048 } ,
-	{ image: '6.jpg', thumb: '6_t.jpg', width: 1638, height: 2048 } ,
-	{ image: '7.jpg', thumb: '7_t.jpg', width: 1536, height: 2048 } ,
-	{ image: '8.jpg', thumb: '8_t.jpg', width: 1445, height: 1445 } ,
-	{ image: '9.jpg', thumb: '9_t.jpg', width: 1600, height: 1200 }
+	{
+		image: 'ailukanmauku.jpg',
+		thumb: 'ailukanmauku_t.jpg',
+		width: 302,
+		height: 403
+	  } ,
+	  { image: 'alllu.jpg', thumb: 'alllu_t.jpg', width: 3000, height: 4000 } ,
+	  {
+		image: 'atenkaverinkissa.jpg',
+		thumb: 'atenkaverinkissa_t.jpg',
+		width: 1200,
+		height: 1600
+	  } ,
+	  {
+		image: 'diablo.jpg',
+		thumb: 'diablo_t.jpg',
+		width: 1536,
+		height: 2048
+	  } ,
+	  { image: 'elmo.jpg', thumb: 'elmo_t.jpg', width: 1500, height: 2000 } ,
+	  {
+		image: 'erikinkissa.jpg',
+		thumb: 'erikinkissa_t.jpg',
+		width: 729,
+		height: 972
+	  } ,
+	  { image: 'helvi.jpg', thumb: 'helvi_t.jpg', width: 1536, height: 2048 } ,
+	  {
+		image: 'kaisla.jpg',
+		thumb: 'kaisla_t.jpg',
+		width: 2847,
+		height: 2973
+	  } ,
+	  { image: 'minni.jpg', thumb: 'minni_t.jpg', width: 2013, height: 2048 } ,
+	  {
+		image: 'nallejanacho.jpg',
+		thumb: 'nallejanacho_t.jpg',
+		width: 1203,
+		height: 1600
+	  } ,
+	  { image: 'nelli.jpg', thumb: 'nelli_t.jpg', width: 1600, height: 1200 } ,
+	  { image: 'noomi.jpg', thumb: 'noomi_t.jpg', width: 1500, height: 2000 } ,
+	  { image: 'pablo.jpg', thumb: 'pablo_t.jpg', width: 1500, height: 2000 } ,
+	  {
+		image: 'piippojahelvi.jpg',
+		thumb: 'piippojahelvi_t.jpg',
+		width: 2048,
+		height: 1536
+	  } ,
+	  {
+		image: 'porkkana.jpg',
+		thumb: 'porkkana_t.jpg',
+		width: 2048,
+		height: 1580
+	  } ,
+	  { image: 'sulo.jpg', thumb: 'sulo_t.jpg', width: 1536, height: 2048 } ,
+	  {
+		image: 'tarunkissoi.jpg',
+		thumb: 'tarunkissoi_t.jpg',
+		width: 1600,
+		height: 1398
+	  } ,
+	  {
+		image: 'Tarunkissoi2.jpg',
+		thumb: 'Tarunkissoi2_t.jpg',
+		width: 1203,
+		height: 1600
+	  } ,
+	  {
+		image: 'Tarunkissoi3.jpg',
+		thumb: 'Tarunkissoi3_t.jpg',
+		width: 1504,
+		height: 1515
+	  } ,
+	  {
+		image: 'tarunkissoi4.jpg',
+		thumb: 'tarunkissoi4_t.jpg',
+		width: 1380,
+		height: 1197
+	  } ,
+	  {
+		image: 'tarunkissoi5.jpg',
+		thumb: 'tarunkissoi5_t.jpg',
+		width: 1536,
+		height: 1566
+	  } ,
+	  { image: 'vieno.jpg', thumb: 'vieno_t.jpg', width: 1536, height: 2048 }
 ];
 
 function blur() {

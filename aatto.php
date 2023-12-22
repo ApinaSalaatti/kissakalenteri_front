@@ -51,7 +51,7 @@ if(validDate(2023, 24)) {
 		<link rel="shortcut icon" href="favicon.ico">
     </head>
     <body>
-				<div id="behind-content">
+		<div id="behind-content">
 			<div id="second-bg">
 				<div id="main-content">
                 <img src="images/aattoLogo.png" id="logo-image" />
