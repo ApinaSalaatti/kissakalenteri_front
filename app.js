@@ -10,6 +10,8 @@ var WINDOW_DEFAULT_SIZE = 90;
 var RESOURCES_LOADED = false;
 var DATA_LOADED = false;
 
+var UPLOAD_FORM_DISPLAYED = false;
+
 var WINDOWS = [
 	{ x: 0.43, y: 0.34, size: 1 },
 	{ x: 0.81, y: 0.45, size: 1 },
@@ -236,6 +238,8 @@ function positionAndResizeCalendar() {
 function resourcesDone() {
     RESOURCES_LOADED = true;
     isEverythingLoaded();
+
+    onResize();
 }
 function dataDone() {
     DATA_LOADED = true;
@@ -301,6 +305,36 @@ function skicatStartAgain() {
     skicatUpdate();
 }
 
+function showUploadForm() {
+    if(UPLOAD_FORM_DISPLAYED) {
+        return;
+    }
+
+    UPLOAD_FORM_DISPLAYED = true;
+
+    let bg = document.getElementById("upload-form-background");
+    bg.style.display = "block";
+
+    let form = document.getElementById("upload-form");
+    form.style.display = "block";
+    centerElement(form);
+}
+
+function closeUploadForm() {
+    if(!UPLOAD_FORM_DISPLAYED) {
+        return;
+    }
+
+    UPLOAD_FORM_DISPLAYED = false;
+
+    let bg = document.getElementById("upload-form-background");
+    bg.style.display = "none";
+
+    let form = document.getElementById("upload-form");
+    form.style.display = "none";
+    centerElement(form);
+}
+
 function initialize() {
     blur();
     window.addEventListener("resize", onResize);
@@ -323,8 +357,58 @@ function initialize() {
     SKICAT.addEventListener("click", skicatClicked);
     skicatUpdate();
 
-    document.getElementById("cornercat").addEventListener("mouseenter", function() { document.getElementById("info-bubble").style.display = "block"; });
-    document.getElementById("cornercat").addEventListener("mouseleave", function() { document.getElementById("info-bubble").style.display = "none"; });
+    document.getElementById("cornercat").addEventListener("click", function(e) {
+        document.getElementById("cornercat-arrow").style.display = "none";
+        setData("cornercat-clicked", true);
+        showUploadForm();
+    });
+
+    if(getData("cornercat-clicked") == "true") {
+        document.getElementById("cornercat-arrow").style.display = "none";
+    }
+
+    document.getElementById("upload-form-background").addEventListener("click", function(e) {
+        if(this === e.target) {
+            closeUploadForm();
+        }
+    });
+
+    document.getElementById("cancel-upload").addEventListener("click", function(e) {
+        closeUploadForm();
+    });
+
+    document.getElementById("upload-cat").addEventListener("click", function(e) {
+        let cat = document.getElementById("cat-image").files[0];  // file from input
+        let info = document.getElementById("additional-info").value;
+        let req = new XMLHttpRequest();
+        let formData = new FormData();
+
+        document.getElementById("upload-error-message").style.display = "none";
+
+        formData.append("cat", cat);
+        formData.append("info", info);      
+        req.open("POST", 'upload.php');
+        req.send(formData);
+
+        req.onreadystatechange = () => {
+            if (req.readyState === 4) {
+                if(req.status == 200) {
+                    document.getElementById("upload-form-fields-wrapper").innerHTML = "KIITOS!!";
+                    document.getElementById("upload-cat").style.display = "none";
+                }
+                else {
+                    document.getElementById("upload-error-message").style.display = "block";
+                }
+            }
+        };
+    });
 }
 
 initialize();
+
+document.onkeydown = function(evt) {
+    if (evt.key == "Escape") {
+        closeCurrentWindow();
+        closeUploadForm();
+    }
+};

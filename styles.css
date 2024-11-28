@@ -48,7 +48,8 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background: url("images/bg_anim.gif");
+    background: url("images/second_bg_anim.gif");
+    background-size: 100px;
 }
 
 #second-bg {
@@ -56,7 +57,7 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: #c03131d7;
+    background-color: #228f2bd7;
 }
 
 #main-content {
@@ -64,7 +65,36 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background: url("images/second_bg_anim.gif");
+    background: url("images/second_bg_anim_2024_3.gif");
+    background-size: 100% auto;
+}
+
+#ten-years {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: url("images/10_years.gif");
+}
+
+#left-fireworks {
+    background: url("images/fireworks_left.gif");
+    height: 100%;
+    width: 200px;
+    background-size: 200px auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+#right-fireworks {
+    background: url("images/fireworks_right.gif");
+    height: 100%;
+    width: 200px;
+    background-size: 200px auto;
+    position: fixed;
+    top: 0px;
+    right: 0px;
 }
 
 #calendar-image {
@@ -202,11 +232,36 @@ body {
     z-index: 0;
 }
 
+#dance-cat-left {
+    position: fixed;
+    bottom: 60px;
+    left: 20px;
+    z-index: 1;
+    height: 50px;
+}
+
+#dance-cat-right {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 1;
+    height: 50px;
+}
+
 #cornercat {
     position: fixed;
     top: 0px;
     right: 0px;
+    z-index: 10;
+}
+
+#cornercat-arrow {
+    position: fixed;
+    top: 160px;
+    right: 90px;
     z-index: 4;
+    transform: rotate(-45deg);
+    width: 100px;
 }
 
 #info-bubble {
@@ -215,4 +270,86 @@ body {
     right: 150px;
     display: none;
     z-index: 100;
+}
+
+#upload-form-background {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0xp;
+    left: 0px;
+    background-color: #000000aa;
+    z-index: 350;
+}
+
+#upload-form {
+    display: none;
+    position: fixed;
+    background-color: #5ce267;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 500px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 400;
+}
+
+#upload-top-bar {
+    background: url("images/file.gif");
+    background-size: 20px;
+    height: 21px;
+}
+
+#upload-form h2 {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#upload-form-text {
+    margin-bottom: 10px;
+}
+
+#upload-form input[type="button"] {
+    height: 70px;
+    width: 100px;
+}
+
+#upload-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+#upload-cat {
+    background-image: url("images/upload_cat.png");
+    background-color: #cc2222;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    padding-left: 30px;
+    background-size: 30px;
+    font-size: 1em;
+    line-height: 1em;
+    transition: background-size 0.5s ease-out 10ms, padding-left 0.5s ease-out 10ms, font-size 0.5s ease-out 10ms, line-height 0.5s ease-out 10ms;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#upload-cat:hover {
+    background-size: 60px;
+    padding-left: 0px;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    border-radius: 4px;
+}
+
+#cancel-upload {
+    background-color: #cc2222;
+    border: 1px solid black;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    border-radius: 4px;
 }

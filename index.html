@@ -1,76 +1,110 @@
 <!DOCTYPE html>
 <html lang="fi">
 	<head>
-		<title>Kissakalenteri 2023!</title>
+		<title>Kissakalenteri 2024!</title>
 		<meta charset="UTF-8"/>
 		<meta property="fb:admins" content="576790613" />
 		<meta property="fb:admins" content="663968960" />
 		<meta property="og:image" content="http://www.kissakalenteri.fi/fb_share.jpg" />
-		<meta property="og:title" content="Kissakalenteri 2023!" />
+		<meta property="og:title" content="Kissakalenteri 2024!" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="http://kissakalenteri.fi/" />
 		<meta property="og:description" content="Joulukalenteri kissoille ja kissanmielisille!" />
 		<meta property="fb:app_id" content="555856014752587" />
 		
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Kissakalenteri 2023!" />
+		<meta name="twitter:title" content="Kissakalenteri 2024!" />
 		<meta name="twitter:description" content="Joulukalenteri kissoille ja kissanmielisille!" />
 		<meta name="twitter:image:src" content="http://www.kissakalenteri.fi/fb_share.jpg" />
 		
 		<link type="text/css" rel="stylesheet" href="styles.css" />
 		<link rel="shortcut icon" href="favicon.ico">
     </head>
-    <body>
+    <body>	
 		<div id="most-behindest">
 			<div id="second-behindest">
 				<div id="behind-content">
 					<div id="second-bg">
 						<div id="main-content">
-							<img src="images/logo.gif" id="logo-image" />
-							<div id="loading-indicator">
-								Ladataan...
-							</div>
+							<div id="ten-years">
+								<div id="upload-form-background">
+									<div id="upload-form">
+										<div id="upload-top-bar"></div>
+										<h2>Lähetä meille kuva kissastasi!</h2>
+										<div id="upload-form-text">
+											Haluatko kissasi kuvan Kissakalenteriin? Voit lähettää sen tällä lomakkeella, tai sähköpostilla osoitteeseen kissakalenteri(at)gmail.com. Voit käyttää lomaketta myös palautteen lähettämiseen.
+											<br><br>
+											HUOM! Kuvan tulee olla png tai jpg -formaatissa, ja korkeintaan 10 megatavun kokoinen.
+										</div>
+										<div id="upload-form-fields-wrapper">
+											<div style="color:red; display:none;" id="upload-error-message">
+												<strong>TIEDOSTON LÄHETYS EPÄONNISTUI! Onhan valitsemasi kuva png tai jpg -formaatissa, ja alle 10 megan kokoinen?</strong>
+											</div>
+											<div>
+												<input type="file" id="cat-image" />
+											</div>
+											<div>
+												<textarea id="additional-info" rows="3" cols="100" placeholder="Lisätietoja kissasta, terveisiä, palautetta"></textarea>
+											</div>
+										</div>
+										<div>
+											<input type="button" value="Lähetä" id="upload-cat" />
+											<input type="button" value="Sulje" id="cancel-upload" />
+										</div>
+									</div>
+								</div>
+								<div id="left-fireworks"></div>
+								<div id="right-fireworks"></div>
+								<img src="images/logo.gif" id="logo-image" />
+								<div id="loading-indicator">
+									Ladataan...
+								</div>
 
-							<div id="background-blurrer"></div>
+								<div id="background-blurrer"></div>
 
-							<img src="images/cornercat.png" id="cornercat" />
-							<img src="images/infobubble2.png" id="info-bubble" />
+								<img src="images/cornercat.png" id="cornercat" />
+								<img src="images/pointing.gif" id="cornercat-arrow" />
 
-							<div id="calendar-image">
-							</div>
-							
-							<div id="image-display">
-								<div id="image-closer">X</div>
-							</div>
+								<div id="calendar-image">
+								</div>
+								
+								<div id="image-display">
+									<div id="image-closer">X</div>
+								</div>
 
-							<div id="info-display">
-								<a href="https://www.kissakalenteri.fi/2014/">2014</a> |
-								<a href="https://www.kissakalenteri.fi/2015/">2015</a> |
-								<a href="https://www.kissakalenteri.fi/2016/">2016</a> |
-								<a href="https://www.kissakalenteri.fi/2017/">2017</a> |
-								<a href="https://www.kissakalenteri.fi/2018/">2018</a> |
-								<a href="https://www.kissakalenteri.fi/2019/">2019</a> |
-								<a href="https://www.kissakalenteri.fi/2020/">2020</a> |
-								<a href="https://www.kissakalenteri.fi/2021/">2021</a> |
-								<a href="https://www.kissakalenteri.fi/2022/">2022</a> |
-								<a href="mailto:kissakalenteri(at)gmail.com">kissakalenteri(at)gmail.com</a>
-							</div>
+								<div id="info-display">
+									<a href="https://www.kissakalenteri.fi/2014/">2014</a> |
+									<a href="https://www.kissakalenteri.fi/2015/">2015</a> |
+									<a href="https://www.kissakalenteri.fi/2016/">2016</a> |
+									<a href="https://www.kissakalenteri.fi/2017/">2017</a> |
+									<a href="https://www.kissakalenteri.fi/2018/">2018</a> |
+									<a href="https://www.kissakalenteri.fi/2019/">2019</a> |
+									<a href="https://www.kissakalenteri.fi/2020/">2020</a> |
+									<a href="https://www.kissakalenteri.fi/2021/">2021</a> |
+									<a href="https://www.kissakalenteri.fi/2022/">2022</a> |
+									<a href="https://www.kissakalenteri.fi/2023/">2023</a> |
+									<a href="mailto:kissakalenteri(at)gmail.com">kissakalenteri(at)gmail.com</a>
+								</div>
 
-							<div id="cat-music">
-								<audio autoplay controls>
-									<source src="audio/khussaBiisi.mp3" type="audio/mpeg">
-									Selaimesi ei tue musiikkia. Et kuule kissamusiikkia. :(
-								</audio>
-							</div>
+								<div id="cat-music">
+									<audio autoplay controls>
+										<source src="audio/khussaBiisi.mp3" type="audio/mpeg">
+										Selaimesi ei tue musiikkia. Et kuule kissamusiikkia. :(
+									</audio>
+								</div>
 
-							<div id="bottom"></div>
-							<img src="images/bottom_cat.gif" id="bottom-cat" />
+								<div id="bottom"></div>
+								<img src="images/bottom_cat.gif" id="bottom-cat" />
 
-							<img src="images/bottom_tree.png" id="bottom-tree" />
-							
-							<img src="images/skicat_infobubble.png" id="skicat-bubble" />
-							<div id="skicat">
-								<img src="images/hiihtokissa.gif" id="skicat-img" />
+								<img src="images/bottom_tree.png" id="bottom-tree" />
+								
+								<img src="images/skicat_infobubble.png" id="skicat-bubble" />
+								<div id="skicat">
+									<img src="images/hiihtokissa.gif" id="skicat-img" />
+								</div>
+
+								<img src="images/dance_cat.gif" id="dance-cat-left" />
+								<img src="images/dance_cat.gif" id="dance-cat-right" />
 							</div>
 						</div>
 					</div>

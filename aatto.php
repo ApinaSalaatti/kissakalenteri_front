@@ -26,24 +26,24 @@ function validDate($year, $day) {
 	return false;
 }
 
-if(validDate(2023, 24)) {
+if(validDate(2024, 24)) {
 ?>
 <!DOCTYPE html>
 <html lang="fi">
 	<head>
-		<title>Mauhtavaa joulua 2023!</title>
+		<title>Mauhtavaa joulua 2024!</title>
 		<meta charset="UTF-8"/>
 		<meta property="fb:admins" content="576790613" />
 		<meta property="fb:admins" content="663968960" />
 		<meta property="og:image" content="http://www.kissakalenteri.fi/fb_share.jpg" />
-		<meta property="og:title" content="Kissakalenteri 2023!" />
+		<meta property="og:title" content="Kissakalenteri 2024!" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="http://kissakalenteri.fi/" />
 		<meta property="og:description" content="Joulukalenteri kissoille ja kissanmielisille!" />
 		<meta property="fb:app_id" content="555856014752587" />
 		
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Kissakalenteri 2023!" />
+		<meta name="twitter:title" content="Kissakalenteri 2024!" />
 		<meta name="twitter:description" content="Joulukalenteri kissoille ja kissanmielisille!" />
 		<meta name="twitter:image:src" content="http://www.kissakalenteri.fi/fb_share.jpg" />
 		
