@@ -47,7 +47,7 @@ if(validDate(2024, 6)) {
 		<meta name="twitter:description" content="Joulukalenteri kissoille ja kissanmielisille!" />
 		<meta name="twitter:image:src" content="http://www.kissakalenteri.fi/fb_share.jpg" />
 		
-		<link type="text/css" rel="stylesheet" href="independenceStyles.css" />
+		<link type="text/css" rel="stylesheet" href="independenceStyles.css?year=2024" />
 		<link rel="shortcut icon" href="favicon.ico">
     </head>
     <body>
@@ -75,7 +75,7 @@ if(validDate(2024, 6)) {
 			</div>
 		</div>
 		
-		<script src="independence.js"></script>
+		<script src="independence.js?year=2024"></script>
     </body>
 </html>
 <?php 
