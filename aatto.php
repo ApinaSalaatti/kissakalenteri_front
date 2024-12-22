@@ -78,6 +78,27 @@ if(validDate(2024, 24)) {
 		</div>
 		</div>
 		
+		<script>
+			<?php
+				$imageData = "[";
+				// Generate info on aatto images
+				$imagesFolder= "images/aatto/images/";
+				$files = scandir($imagesFolder);
+				foreach ($files as $f) {
+					if($f == "." || $f == "..") {
+						continue;
+					}
+
+					$path = $imagesFolder . $f;
+					$size = getimagesize($path);
+					$imageData .= json_encode([ "image" => $path, "thumb" => $path, "width" => $size[0], "height" => $size[1] ]) . ",";
+				}
+				$imageData .= "]";
+			?>
+
+			var IMAGES = <?php echo $imageData; ?>
+		</script>
+		
 		<script src="aattoScript.js"></script>
     </body>
 </html>
