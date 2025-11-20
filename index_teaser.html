@@ -1,89 +1,171 @@
 
 <!DOCTYPE html>
 <html>
-        <head>
-                <title>Kissakalenteri 2024!</title>
-                <meta charset="UTF-8"/>
-                <meta property="fb:admins" content="576790613" />
-                <meta property="fb:admins" content="663968960" />
-                <meta property="og:image" content="http://www.kissakalenteri.fi/fb_share.jpg" />
-                <meta property="og:title" content="Kissakalenteri 2024!" />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="http://www.kissakalenteri.fi" />
-                <meta property="og:description" content="Joulukalenteri kissoille ja kissanmielisille!" />
+    <head>
+        <title>Kissakalenteri 2024!</title>
+        <meta charset="UTF-8"/>
+        <meta property="fb:admins" content="576790613" />
+        <meta property="fb:admins" content="663968960" />
+        <meta property="og:image" content="http://www.kissakalenteri.fi/fb_share.jpg" />
+        <meta property="og:title" content="Kissakalenteri 2024!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://www.kissakalenteri.fi" />
+        <meta property="og:description" content="Joulukalenteri kissoille ja kissanmielisille!" />
 
-                <link rel="shortcut icon" href="favicon.ico">
-                <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky" rel="stylesheet">
 
 
-                <style>
-                        .teaser-links a {
-                                text-decoration: none;
-                                font-weight: bold;
-                        }
-                        .teaser-links a:hover {
-                                text-decoration: underline;
-                        }
+        <style>
+            .teaser-links a {
+                    text-decoration: none;
+                    font-weight: bold;
+            }
+            .teaser-links a:hover {
+                    text-decoration: underline;
+            }
 
-                </style>
-        </head>
-        <body style="margin:0px;padding:0px;font-family:Sans-Serif;background:url('teaser_bg.png');">
-                <div id="timer" style="position:absolute;top:50px;width:100%;text-align:center;font-size:6em;color:#000000;font-family:Sans-Serif">
-                        <span style="width:100%;text-align:center;padding:5px;" id="clock"></span>
+            #teaser-upload-form {
+                text-align: center;
+            }
+
+            #teaser-upload-form input[type="button"] {
+                height: 70px;
+                width: 100px;
+            }
+
+            #upload-cat {
+                background-image: url("images/upload_cat.png");
+                background-color: #cc2222;
+                border: 1px solid black;
+                background-repeat: no-repeat;
+                background-position-y: center;
+                background-position-x: 5px;
+                padding-left: 30px;
+                background-size: 30px;
+                font-size: 1em;
+                line-height: 1em;
+                transition: background-size 0.5s ease-out 10ms, padding-left 0.5s ease-out 10ms, font-size 0.5s ease-out 10ms, line-height 0.5s ease-out 10ms;
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+
+            #upload-cat:hover {
+                background-size: 60px;
+                padding-left: 0px;
+                font-size: 1.1em;
+                line-height: 1.1em;
+                border-radius: 4px;
+            }
+
+        </style>
+    </head>
+    <body style="margin:0px;padding:0px;font-family:Sans-Serif;background:url('teaser_bg.png');">
+        <div id="timer" style="position:absolute;top:50px;width:100%;text-align:center;font-size:6em;color:#000000;font-family:Sans-Serif">
+            <span style="width:100%;text-align:center;padding:5px;" id="clock"></span>
+        </div>
+
+        <div id="logo" style="width:100%;">
+            <img src="teaser.png" style="width:100%;border-color:#dddddd;border-style:solid;border-width:0px 0px 3px 0px;" />
+        </div>
+
+        <div style="text-align:center;" class="teaser-links">
+            <a href="2014/">2014</a> |
+            <a href="2015/">2015</a> |
+            <a href="2016/">2016</a> |
+            <a href="2017/">2017</a> |
+            <a href="2018/">2018</a> |
+            <a href="2019/">2019</a> |
+            <a href="2020/">2020</a> |
+            <a href="2021/">2021</a> |
+            <a href="2022/">2022</a> |
+            <a href="2023/">2023</a> |
+            <a href="2024/">2024</a> |
+        </div>
+        <div id="teaser-upload-form">
+        <h2><img src="images/pointing.gif">Lähetä meille kuva kissastasi!<img src="images/pointing_left.gif"></h2>
+                <div id="upload-form-text">
+                    Haluatko kissasi kuvan Kissakalenteriin? Voit lähettää sen tällä lomakkeella, tai sähköpostilla osoitteeseen kissakalenteri(at)gmail.com. Voit käyttää lomaketta myös palautteen lähettämiseen.
+                    <br><br>
+                    HUOM! Kuvan tulee olla png tai jpg -formaatissa, ja korkeintaan 10 megatavun kokoinen.
                 </div>
-
-                <div id="logo" style="width:100%;">
-                        <img src="teaser.png" style="width:100%;border-color:#dddddd;border-style:solid;border-width:0px 0px 3px 0px;" />
+                <div id="upload-form-fields-wrapper">
+                    <div style="color:red; display:none;" id="upload-error-message">
+                        <strong>TIEDOSTON LÄHETYS EPÄONNISTUI! Onhan valitsemasi kuva png tai jpg -formaatissa, ja alle 10 megan kokoinen?</strong>
+                    </div>
+                    <div>
+                        <input type="file" id="cat-image" />
+                    </div>
+                    <div>
+                        <textarea id="additional-info" rows="3" cols="100" placeholder="Lisätietoja kissasta, terveisiä, palautetta"></textarea>
+                    </div>
                 </div>
-
-                <div style="text-align:center;" class="teaser-links">
-                    <a href="2014/">2014</a> |
-                    <a href="2015/">2015</a> |
-                    <a href="2016/">2016</a> |
-                    <a href="2017/">2017</a> |
-                    <a href="2018/">2018</a> |
-                    <a href="2019/">2019</a> |
-                    <a href="2020/">2020</a> |
-                    <a href="2021/">2021</a> |
-                    <a href="2022/">2022</a> |
-                    <a href="2023/">2023</a> |
+                <div>
+                    <input type="button" value="Lähetä" id="upload-cat" />
                 </div>
+        </div>
 
         <script>
-                function init() {
-                        function countdown() {
-                                var now = new Date().getTime();
+            document.getElementById("upload-cat").addEventListener("click", function(e) {
+                let cat = document.getElementById("cat-image").files[0];  // file from input
+                let info = document.getElementById("additional-info").value;
+                let req = new XMLHttpRequest();
+                let formData = new FormData();
 
-                                // Find the distance between now an the count down date
-                                var distance = countDownDate - now;
+                document.getElementById("upload-error-message").style.display = "none";
 
-                                // Time calculations for days, hours, minutes and seconds
-                                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                formData.append("cat", cat);
+                formData.append("info", info);      
+                req.open("POST", 'upload.php');
+                req.send(formData);
 
-                                if(days < 10) days = "0"+days;
-                                if(hours < 10) hours = "0"+hours;
-                                if(minutes < 10) minutes = "0"+minutes;
-                                if(seconds < 10) seconds = "0"+seconds;
-
-                                var clock = document.getElementById('clock');
-                                clock.innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
-
-                                var logoH = document.getElementById('logo').clientHeight;
-                                var timerH = document.getElementById('timer').clientHeight;
-                                document.getElementById('timer').style.top = (logoH - timerH) / 2 + "px";
-
-                                window.setTimeout(countdown, 1000);
+                req.onreadystatechange = () => {
+                    if (req.readyState === 4) {
+                        if(req.status == 200) {
+                            document.getElementById("upload-form-fields-wrapper").innerHTML = "KIITOS!!";
+                            document.getElementById("upload-cat").style.display = "none";
                         }
+                        else {
+                            document.getElementById("upload-error-message").style.display = "block";
+                        }
+                    }
+                };
+            });
 
-                        document.getElementById('timer').style.fontFamily = "Fontdiner Swanky";
-                        var countDownDate = new Date("Dec 1, 2024 00:00:01").getTime();
-                        countdown();
+            function init() {
+                function countdown() {
+                    var now = new Date().getTime();
+
+                    // Find the distance between now an the count down date
+                    var distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    if(days < 10) days = "0"+days;
+                    if(hours < 10) hours = "0"+hours;
+                    if(minutes < 10) minutes = "0"+minutes;
+                    if(seconds < 10) seconds = "0"+seconds;
+
+                    var clock = document.getElementById('clock');
+                    clock.innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+                    var logoH = document.getElementById('logo').clientHeight;
+                    var timerH = document.getElementById('timer').clientHeight;
+                    document.getElementById('timer').style.top = (logoH - timerH) / 2 + "px";
+
+                    window.setTimeout(countdown, 1000);
                 }
 
-                init();
+                document.getElementById('timer').style.fontFamily = "Fontdiner Swanky";
+                var countDownDate = new Date("Dec 1, 2025 00:00:01").getTime();
+                countdown();
+            }
+
+            init();
         </script>
-        </body>
+    </body>
 </html>
