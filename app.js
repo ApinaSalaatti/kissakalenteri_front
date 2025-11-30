@@ -2,9 +2,9 @@
 
 var WIDTH = 0;
 var HEIGHT = 0;
-var CALENDAR_ORIGINAL_WIDTH = 0;
-var CALENDAR_ORIGINAL_HEIGHT = 0;
-var LOGO_ORIGINAL_WIDTH = 0;
+var CALENDAR_ORIGINAL_WIDTH = 1050;
+var CALENDAR_ORIGINAL_HEIGHT = 610;
+var LOGO_ORIGINAL_WIDTH = 700;
 var WINDOW_DEFAULT_SIZE = 90;
 
 var RESOURCES_LOADED = false;
@@ -338,10 +338,6 @@ function closeUploadForm() {
 function initialize() {
     blur();
     window.addEventListener("resize", onResize);
-
-    CALENDAR_ORIGINAL_HEIGHT = document.getElementById("calendar-image").offsetHeight;
-    CALENDAR_ORIGINAL_WIDTH = document.getElementById("calendar-image").offsetWidth;
-    LOGO_ORIGINAL_WIDTH = document.getElementById("logo-image").offsetWidth;
 
     createWindows();
 

@@ -77,7 +77,7 @@ body {
 }
 
 #calendar-image {
-    background: url('images/calendar.png') no-repeat;
+    background: url('images/calendar.png?version=2025') no-repeat;
     background-size: 100%;
     position: fixed;
     width: 1050px;
