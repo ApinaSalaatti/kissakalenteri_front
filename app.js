@@ -13,30 +13,30 @@ var DATA_LOADED = false;
 var UPLOAD_FORM_DISPLAYED = false;
 
 var WINDOWS = [
-	{ x: 0.43, y: 0.34, size: 1 },
-	{ x: 0.81, y: 0.45, size: 1 },
-	{ x: 0.41, y: 0.53, size: 1 },
-	{ x: 0.69, y: 0.14, size: 1 },
-	{ x: 0.68, y: 0.32, size: 1 },
-	{ x: 0.45, y: 0.15, size: 1, target: "itsenaisyys.php" },
-	{ x: 0.10, y: 0.16, size: 1 },
-	{ x: 0.59, y: 0.67, size: 1 },
-	{ x: 0.46, y: 0.71, size: 1 },
-	{ x: 0.20, y: 0.70, size: 1 }, // 10
-	{ x: 0.33, y: 0.15, size: 1 },
-	{ x: 0.82, y: 0.68, size: 1 },
-	{ x: 0.08, y: 0.33, size: 1 },
-	{ x: 0.09, y: 0.68, size: 1 },
-	{ x: 0.31, y: 0.695, size: 1 },
-	{ x: 0.21, y: 0.33, size: 1 },
-	{ x: 0.57, y: 0.25, size: 1 },
-	{ x: 0.81, y: 0.26, size: 1 },
-	{ x: 0.22, y: 0.14, size: 1 },
-	{ x: 0.14, y: 0.51, size: 1 },
-	{ x: 0.25, y: 0.53, size: 1 },
-	{ x: 0.71, y: 0.55, size: 1 },
-	{ x: 0.33, y: 0.35, size: 1 },
-	{ x: 0.55, y: 0.46, size: 1.2, target: "aatto.php" }
+	{ x: 0.43, y: 0.35, size: 1 },
+	{ x: 0.81, y: 0.46, size: 1 },
+	{ x: 0.41, y: 0.54, size: 1 },
+	{ x: 0.70, y: 0.15, size: 1 },
+	{ x: 0.68, y: 0.33, size: 1 },
+	{ x: 0.45, y: 0.16, size: 1, target: "itsenaisyys.php" },
+	{ x: 0.10, y: 0.17, size: 1 },
+	{ x: 0.59, y: 0.68, size: 1 },
+	{ x: 0.46, y: 0.72, size: 1 },
+	{ x: 0.20, y: 0.71, size: 1 }, // 10
+	{ x: 0.33, y: 0.16, size: 1 },
+	{ x: 0.82, y: 0.69, size: 1 },
+	{ x: 0.08, y: 0.34, size: 1 },
+	{ x: 0.09, y: 0.69, size: 1 },
+	{ x: 0.31, y: 0.705, size: 1 },
+	{ x: 0.21, y: 0.34, size: 1 },
+	{ x: 0.57, y: 0.26, size: 1 },
+	{ x: 0.81, y: 0.27, size: 1 },
+	{ x: 0.22, y: 0.15, size: 1 },
+	{ x: 0.14, y: 0.52, size: 1 },
+	{ x: 0.25, y: 0.54, size: 1 },
+	{ x: 0.71, y: 0.56, size: 1 },
+	{ x: 0.33, y: 0.36, size: 1 },
+	{ x: 0.55, y: 0.47, size: 1.2, target: "aatto.php" }
 ];
 
 var IMAGE_DISPLAYED = false;

@@ -57,7 +57,7 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: #228f2bd7;
+    background-color: #2670dfd7;
 }
 
 #main-content {
@@ -65,8 +65,8 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background: url("images/second_bg_anim_2024_3.gif");
-    background-size: 100% auto;
+    background: url("images/bg_anim_2025.gif");
+    background-size: 90px;
 }
 
 #ten-years {
@@ -74,27 +74,6 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background: url("images/10_years.gif");
-}
-
-#left-fireworks {
-    background: url("images/fireworks_left.gif");
-    height: 100%;
-    width: 200px;
-    background-size: 200px auto;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-}
-
-#right-fireworks {
-    background: url("images/fireworks_right.gif");
-    height: 100%;
-    width: 200px;
-    background-size: 200px auto;
-    position: fixed;
-    top: 0px;
-    right: 0px;
 }
 
 #calendar-image {
