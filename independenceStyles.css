@@ -49,8 +49,7 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background: url("images/second_bg_anim_2024_3.gif");
-    background-size: 100% auto;
+    background: url("images/bg_anim_2025.gif");
 }
 
 #independence-cat {
@@ -58,8 +57,8 @@ body {
 	left: 0px;
 	top: 0px;
 	z-index: 5;
-	width: 736px;
-	height: 982px;
+	width: 421px;
+	height: 533px;
 }
 
 #cat-music {

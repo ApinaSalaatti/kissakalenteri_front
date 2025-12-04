@@ -26,28 +26,28 @@ function validDate($year, $day) {
 	return false;
 }
 
-if(validDate(2024, 6)) {
+if(validDate(2025, 6)) {
 ?>
 <!DOCTYPE html>
 <html lang="fi">
 	<head>
-		<title>Hyvää itsenäisyyspäivää 2024!</title>
+		<title>Hyvää itsenäisyyspäivää 2025!</title>
 		<meta charset="UTF-8"/>
 		<meta property="fb:admins" content="576790613" />
 		<meta property="fb:admins" content="663968960" />
 		<meta property="og:image" content="http://www.kissakalenteri.fi/fb_share.jpg" />
-		<meta property="og:title" content="Kissakalenteri 2024!" />
+		<meta property="og:title" content="Kissakalenteri 2025!" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="http://kissakalenteri.fi/" />
 		<meta property="og:description" content="Joulukalenteri kissoille ja kissanmielisille!" />
 		<meta property="fb:app_id" content="555856014752587" />
 		
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Kissakalenteri 2024!" />
+		<meta name="twitter:title" content="Kissakalenteri 2025!" />
 		<meta name="twitter:description" content="Joulukalenteri kissoille ja kissanmielisille!" />
 		<meta name="twitter:image:src" content="http://www.kissakalenteri.fi/fb_share.jpg" />
 		
-		<link type="text/css" rel="stylesheet" href="independenceStyles.css?year=2024" />
+		<link type="text/css" rel="stylesheet" href="independenceStyles.css?year=2025" />
 		<link rel="shortcut icon" href="favicon.ico">
     </head>
     <body>
@@ -57,7 +57,7 @@ if(validDate(2024, 6)) {
 					<div id="main-content">
 						<img src="images/independence_logo.png" id="logo-image" />
 
-						<img src="https://www.kissakalenteri.fi/api/2024/6" id="independence-cat" />
+						<img src="https://www.kissakalenteri.fi/api/2025/6" id="independence-cat" />
 
 						<div id="cat-music">
 							<audio autoplay controls>
@@ -75,7 +75,7 @@ if(validDate(2024, 6)) {
 			</div>
 		</div>
 		
-		<script src="independence.js?year=2024"></script>
+		<script src="independence.js?year=2025"></script>
     </body>
 </html>
 <?php 
