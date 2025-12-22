@@ -1,13 +1,12 @@
 ﻿html {
-    min-height: 100%;
+    height: 100vh;
 }
 
 body {
 	padding: 0px;
 	margin: 0px;
 	font-family: Sans-Serif;
-	width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     background: url("images/bg_of_bg.gif");
 }
 
@@ -18,27 +17,24 @@ body {
 }
 
 #behind-content {
-    width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     margin: 0px;
     padding: 0px;
     background: url("images/bg_anim.gif");
 }
 
 #second-bg {
-    width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     margin: 0px;
     padding: 0px;
-    background-color: #c03131d7;
+    background-color: #2670dfd7;
 }
 
 #main-content {
-    width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     margin: 0px;
     padding: 0px;
-    background: url("images/second_bg_anim_2024_3.gif");
+    background: url("images/bg_anim_2025.gif");
 }
 
 #main-image{

@@ -78,8 +78,6 @@ function addFlake() {
 function onResize() {
     WIDTH = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 	HEIGHT = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-	
-	console.log(WIDTH);
 
     var l = document.getElementById("logo-image");
     if(l.offsetWidth > WIDTH) {
